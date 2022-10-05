@@ -692,8 +692,8 @@ INPUT ./Proposal.bbl
 INPUT Proposal.bbl
 INPUT ./Proposal.bbl
 INPUT Proposal.bbl
-INPUT c:/texlive/2022/texmf-dist/fonts/tfm/public/cm/cmti12.tfm
 INPUT c:/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map
+INPUT c:/texlive/2022/texmf-dist/fonts/tfm/public/cm/cmti12.tfm
 INPUT Proposal.aux
 INPUT ./Proposal.out
 INPUT ./Proposal.out
