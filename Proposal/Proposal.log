@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.9.13)  4 OCT 2022 19:12
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.9.13)  5 OCT 2022 14:32
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -440,16 +440,16 @@ Package rerunfilecheck Info: File `Proposal.out' has not changed.
 Here is how much of TeX's memory you used:
  12574 strings out of 475075
  203182 string characters out of 5783001
- 671766 words of memory out of 5000000
+ 673766 words of memory out of 5000000
  33803 multiletter control sequences out of 15000+600000
  472173 words of font info for 38 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  72i,6n,77p,477b,496s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on Proposal.pdf (1 page, 58668 bytes).
+Output written on Proposal.pdf (1 page, 60354 bytes).
 PDF statistics:
- 44 PDF objects out of 1000 (max. 8388607)
- 32 compressed objects within 1 object stream
+ 46 PDF objects out of 1000 (max. 8388607)
+ 34 compressed objects within 1 object stream
  7 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 

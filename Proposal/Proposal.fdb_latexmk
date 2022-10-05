@@ -1,17 +1,17 @@
 # Fdb version 3
-["bibtex Proposal"] 1664924051 "Proposal.aux" "Proposal.bbl" "Proposal" 1664925135
-  "Proposal.aux" 1664925134 925 f8069714464210c9b64d420747cdeaab "pdflatex"
+["bibtex Proposal"] 1664994753 "Proposal.aux" "Proposal.bbl" "Proposal" 1664994757
+  "Proposal.aux" 1664994756 956 8634c879036abb7e496e8a2dbf2e669a "pdflatex"
   "c:/texlive/2022/texmf-dist/bibtex/bst/chicago/chicago.bst" 1663114094 37416 2ae04276c51f11eda70770f4081293b7 ""
   "citations.bib" 1664921830 573 d17a726b94c4e4c48fbd91bacbce036b ""
   (generated)
   "Proposal.bbl"
   "Proposal.blg"
-["pdflatex"] 1664925133 "c:/Users/micha/OneDrive/Documents/GitHub/Project/course-paper-or-presentation-MichaelMarcaccio/Proposal/Proposal.tex" "Proposal.pdf" "Proposal" 1664925135
-  "Proposal.aux" 1664925134 925 f8069714464210c9b64d420747cdeaab "pdflatex"
-  "Proposal.bbl" 1664924052 660 423b1f88573913a1c6443b089c9aeb9d "bibtex Proposal"
+["pdflatex"] 1664994754 "c:/Users/micha/OneDrive/Documents/GitHub/Project/course-paper-or-presentation-MichaelMarcaccio/Proposal/Proposal.tex" "Proposal.pdf" "Proposal" 1664994757
+  "Proposal.aux" 1664994756 956 8634c879036abb7e496e8a2dbf2e669a "pdflatex"
+  "Proposal.bbl" 1664994754 660 423b1f88573913a1c6443b089c9aeb9d "bibtex Proposal"
   "Proposal.out" 0 -1 0 "pdflatex"
-  "Proposal.tex" 1664925131 1696 bdad3197120110201ebf16c769bbfb3c ""
-  "c:/Users/micha/OneDrive/Documents/GitHub/Project/course-paper-or-presentation-MichaelMarcaccio/Proposal/Proposal.tex" 1664925131 1696 bdad3197120110201ebf16c769bbfb3c ""
+  "Proposal.tex" 1664994749 2378 5729978efc686d4f6c411c22e561bdad ""
+  "c:/Users/micha/OneDrive/Documents/GitHub/Project/course-paper-or-presentation-MichaelMarcaccio/Proposal/Proposal.tex" 1664994749 2378 5729978efc686d4f6c411c22e561bdad ""
   "c:/texlive/2022/texmf-dist/fonts/map/fontname/texfonts.map" 1663114966 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "c:/texlive/2022/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1663113510 1004 54797486969f23fa377b128694d548df ""
   "c:/texlive/2022/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm" 1663114148 1324 c910af8c371558dc20f2d7822f66fe64 ""
