@@ -688,11 +688,11 @@ INPUT c:/texlive/2022/texmf-dist/fonts/tfm/public/cm/cmex10.tfm
 INPUT c:/texlive/2022/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm
 INPUT c:/texlive/2022/texmf-dist/fonts/tfm/public/cm/cmr17.tfm
 INPUT c:/texlive/2022/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
-INPUT ./Proposal.bbl
-INPUT Proposal.bbl
-INPUT ./Proposal.bbl
-INPUT Proposal.bbl
 INPUT c:/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map
+INPUT ./Proposal.bbl
+INPUT Proposal.bbl
+INPUT ./Proposal.bbl
+INPUT Proposal.bbl
 INPUT c:/texlive/2022/texmf-dist/fonts/tfm/public/cm/cmti12.tfm
 INPUT Proposal.aux
 INPUT ./Proposal.out
