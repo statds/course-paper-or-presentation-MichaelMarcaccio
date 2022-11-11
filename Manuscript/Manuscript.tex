@@ -42,7 +42,7 @@ payments, reporting, to processing. This means members can be calling about thei
 or unauthorized transactions. It is crucial that a bank is prepared for spikes in calls and have agents knowledgeable in all aspects of the bank.
 
 
-  Many studies have been done working with call centers such as Modeling and Forecasting Call Center Arrivals \citep{ibrahim2016modeling}.
+  Many studies have been done working with call center volumes such as Modeling and Forecasting Call Center Arrivals \citep{ibrahim2016modeling}.
 Here an Autoregressive moving average (ARIMA) model is used, which is depicted in the paper as:
 \begin{equation}
   \label{eq:ARIMA Standard}
@@ -64,7 +64,7 @@ with three equations of:
 \end{equation}
 where $B_{t}$ is the slope component, $M_{t}$ is the level component, and $S_{t}$ is the seasonal component, and s is the period of seasonality.
 Arima models are a great model to create as "they allow the  representation of a  wide array of potentially useful predictor functions in  models  which contain relatively few parameters" \citep{newbold1983arima}.
-With the combination of Holt-Winters smoothing, Ibrahim creates a great model for forecasting call volume, however he never goes into detail about
+With the combination of Holt-Winters smoothing, Ibrahim creates a great model for forecasting call volume, however the paper never goes into detail about
 how many agents there should be. 
 
   \citep{evensen1999effective} goes into detail about effectve service delivery stating the expecations of customers are of "function of
@@ -76,20 +76,33 @@ this as it is described as the "call-to-agent" problem, and that an efficiency-d
 
   The contributions of the paper creates models on the basis to maximize quality of the service in relation to the number of agents. 
 Based on this, models were created to minimize:
-1)WaitTime
-2)CallTime
-3)Reduce GoalTime not being Met
-4)Reduce Calls not being Handled
+\begin{enumerate}
+  \item WaitTime
+  \item CallTime
+  \item Reduce GoalTime not being Met
+  \item Reduce Calls not being Handled
+\end{enumerate}
 The rest of the paper will go through the dataset and breaking it up to present a clear view on the historical data. I have also created a 
 forecast on the projected call volume throughout a week through a 15 minute interval.
 
 
-\section*{Data Description}
-
+\section*{Data}
+\begin{sloppypar}
+  The data comes from an undisclosed bank where I wrote two SQL queries to obtain. This comes directly from the banks records dating back from Febuary 2020
+  to Septemeber 2022, and I was lucky enough to do a data analysis on real-life data. This dataset consists of 466,565 observations of 31 variables. 
+  Some significant variables consist of Calldate, Caller_ID, Caller_ID, QueuedYN, AnsweredYN, AbandonedYN, QueuedName, InteractionOutcome, 
+  AnsweredGoalMet, StartTime, EndTime, WaitTime, Holdtime, AgentTalkDuration, AgentHandleTime, WrapUpTime, DayoftheYear,
+  WeekoftheYear, and NbrofAgents.
+\end{sloppypar}
+  It is important to note that AgentTalkDuration refers to the actual amount of time the agent the agent was talking while
+AbandonedYN refers to if the caller ended the call before speaking to a representative. The QueuedYN is if the member was put in a queue and had to wait to speak to an agent.
+The queue is an automated service or an IVR (Interactive Voice Response). The latest generation of speech-recognition technology allows
+IVRs to interpret complex user commands, so customers may be able to “self-serve”, i.e., complete the service interaction at the IVR. \citep{avramidis2005modeling}.
+Holdtime is how long the member waits when an agent places on them hold, while waittime is how long they have to wait before someone answers there call.
+WrapUpTime refers to how long the member takes to hang up the phone after the agent stops talk. AgentHandleTime is the total of Holdtime, WrapUpTime, and AgentHandleTime.
 
 
 \section*{Methods}
-Test stuffg
 \begin{figure}[H]
     \centering
     \includegraphics[width=200pt,height=200pt]{By Year.png}
@@ -97,10 +110,9 @@ Test stuffg
     \label{fig:Year}
   \end{figure}
 
-\section*{Results}
+\section*{Simulation}
 
 
-\section*{Results}
 
 \section*{Discussion}
 
