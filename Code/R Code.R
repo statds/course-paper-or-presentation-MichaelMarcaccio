@@ -519,21 +519,28 @@ timePeriods_n213 <- forEach15MinutePeriodAllWeek2[,]
 
 weekDayPeriods_n6 <- forEachDayOfWeekTheAvgEach15MinPeriod_final
 
-#Ccorrelations
+#Correlations
 cor.test(timePeriods_n213$avgWaitTime, timePeriods_n213$avgCallTime) # good
-cor.test(weekDayPeriods_n6$avgWaitTime, weekDayPeriods_n6$avgCallTime) # not good
+cor.test(weekDayPeriods_n6$avgWaitTime, weekDayPeriods_n6$avgCallTime) # good
 
+#Add Agents to Reduce Wait Time
 cor.test(timePeriods_n213$callsPerAgent, timePeriods_n213$avgWaitTime) # good
 cor.test(weekDayPeriods_n6$callsPerAgent, weekDayPeriods_n6$avgWaitTime) # not good
 
+#Add Agents to Reduce Call Time
 cor.test(timePeriods_n213$callsPerAgent, timePeriods_n213$avgCallTime) # good
 cor.test(weekDayPeriods_n6$callsPerAgent, weekDayPeriods_n6$avgCallTime) # not good
 
+
+#Add Agents to Reduce Wait Goal Not Being Met
 cor.test(timePeriods_n213$callsPerAgent, timePeriods_n213$avgGoalMet) # good
 cor.test(weekDayPeriods_n6$callsPerAgent, weekDayPeriods_n6$avgGoalMet) # not good
 
-cor.test(timePeriods_n213$callsPerAgent, timePeriods_n213$avgInteractValue) # not good
-cor.test(weekDayPeriods_n6$callsPerAgent, weekDayPeriods_n6$avgInteractValue) # not good
+
+#Add Agents to Reduce Calls not being "Handled"
+cor.test(timePeriods_n213$callsPerAgent, timePeriods_n213$avgInteractValue) # not Good-Correlation doesnt make sense
+cor.test(weekDayPeriods_n6$callsPerAgent, weekDayPeriods_n6$avgInteractValue) # not Good
+
 
 
 # square values for polynomial relationships
@@ -560,33 +567,6 @@ summary(lm(avgGoalMet ~ callsPerAgent + callsPerAgent_sq, data = timePeriods_n21
 
 summary(lm(avgInteractValue ~ callsPerAgent, data = timePeriods_n213))
 summary(lm(avgInteractValue ~ callsPerAgent + callsPerAgent_sq, data = timePeriods_n213))
-
-
-########### **** Agents to Reduce Wait Time
-
-# avgWaitTime = 61.148*callsPerAgent ---> R_sq = 0.1642   **** Estimate Good, but Intercept is not significant?
-# avgWaitTime = 188.486*callsPerAgent + -36.855*callsPerAgent^2  ---> R_sq = 0.2503     **** MAYBE?
-
-
-########### **** Agents to Reduce Call Time
-
-# avgCallTime = 20.115*callsPerAgent ---> R_sq = 0.05691  **** Estimate Pretty Good, but Intercept is not significant?
-# avgCallTime = 120.016*callsPerAgent + -28.914*callsPerAgent^2  ---> R_sq = 0.2265     **** Better P Score
-
-
-########### **** Agents to Reduce Wait Goal Not Being Met
-
-# avgGoalMet = -0.21558*callsPerAgent ---> R_sq = 0.2458  **** Estimate Great
-# avgGoalMet = -0.57352*callsPerAgent + 0.10360*callsPerAgent^2  ---> R_sq = 0.3277     **** Confusing but seems ok
-
-
-########### **** Agents to Reduce Calls not being "Handled"
-
-# avgGoalMet0.009898*callsPerAgent ---> R_sq =0.1971 **** Correlation BACKWARDS  **** Don't use?
-# avgGoalMet = 0.0121626*callsPerAgent + -0.0006553*callsPerAgent^2  ---> R_sq =0.1983     **** Very Confusing but seems maybe ok (squared estimate small, but correct direction....)
-
-
-
 
 
 

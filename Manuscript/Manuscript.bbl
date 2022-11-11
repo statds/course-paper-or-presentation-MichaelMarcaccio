@@ -1,0 +1,24 @@
+\begin{thebibliography}{}
+
+\bibitem[\protect\citeauthoryear{Avramidis and L'Ecuyer}{Avramidis and
+  L'Ecuyer}{2005}]{avramidis2005modeling}
+Avramidis, A.~N. and P.~L'Ecuyer (2005).
+\newblock Modeling and simulation of call centers.
+\newblock In {\em Proceedings of the Winter Simulation Conference, 2005.}, pp.\
+   9--pp. IEEE.
+
+\bibitem[\protect\citeauthoryear{Evensen, Frei, and Harker}{Evensen
+  et~al.}{1999}]{evensen1999effective}
+Evensen, A., F.~X. Frei, and P.~T. Harker (1999).
+\newblock {\em Effective call center management: evidence from financial
+  services}.
+\newblock Citeseer.
+
+\bibitem[\protect\citeauthoryear{Ibrahim, Ye, L’Ecuyer, and Shen}{Ibrahim
+  et~al.}{2016}]{ibrahim2016modeling}
+Ibrahim, R., H.~Ye, P.~L’Ecuyer, and H.~Shen (2016).
+\newblock Modeling and forecasting call center arrivals: A literature survey
+  and a case study.
+\newblock {\em International Journal of Forecasting\/}~{\em 32\/}(3), 865--874.
+
+\end{thebibliography}
