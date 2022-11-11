@@ -21,4 +21,10 @@ Ibrahim, R., H.~Ye, P.~L’Ecuyer, and H.~Shen (2016).
   and a case study.
 \newblock {\em International Journal of Forecasting\/}~{\em 32\/}(3), 865--874.
 
+\bibitem[\protect\citeauthoryear{Newbold}{Newbold}{1983}]{newbold1983arima}
+Newbold, P. (1983).
+\newblock Arima model building and the time series analysis approach to
+  forecasting.
+\newblock {\em Journal of forecasting\/}~{\em 2\/}(1), 23--35.
+
 \end{thebibliography}
