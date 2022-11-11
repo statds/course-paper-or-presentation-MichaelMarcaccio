@@ -25,8 +25,8 @@
 \maketitle
 
 \begin{abstract}
- With over 15 million people employed, a compound annual growth rate (CAGR) of 5.6 percent between 2020 and 2027, and 28,000
- in the United States alone, call centers play a pivotal role in a businesses success.In this paper, call center volume was forecasted and
+ With over 15 million people employed, a predicted compound annual growth rate (CAGR) of 5.6 percent between 2020 and 2027, and with over 28,000 locations
+ in the United States alone, call centers play a pivotal role in a business' success.In this paper, call center volume was forecasted and
  models were created to predict the number of agents needed to meet critical attributes such as waittime, calltime, and holdtime. 
  Forecasting gives businesses the ability to make informed business decision and develop data-driven strategies. In the literature it is very
  common to see call center volume being predicted using different techniques, but there is very limited studies on attempting to correlate
@@ -35,20 +35,20 @@
 \end{abstract}
 
 \section*{Introduction}
-  With over 15 million people employed, a compound annual growth rate (CAGR) of 5.6 percent between 2020 and 2027, and 28,000
-in the United States alone, call centers play a pivotal role in a businesses success. Call Centers are a key part of customer service,
-that will save a company time, money, and unneccessary stress. In the banking industry, calls can range from inquires, transfers, 
-payments, reporting, to processing. This means members can be calling about their account balance, credit card bills, loan applications, 
-or unauthorized transactions. It is crucial that a bank is prepared for spikes in calls and have agents knowledgeable in all aspects of the bank.
+  With over 15 million people employed, a predicted compound annual growth rate (CAGR) of 5.6 percent between 2020 and 2027, and with over 28,000 locations
+in the United States alone, call centers play a pivotal role in a business' success. Call centers are a key part of customer service
+that will save a company time, money, and unneccessary obstacles. In the banking industry, calls can range from inquires, transfers, 
+payments, reporting, to processing. This means members could call about their account balance, credit card bills, loan applications, 
+or unauthorized transactions. It is crucial that a bank is prepared for spikes in calls and have agents knowledgeable in all aspects of banking.
 
 
-  Many studies have been done working with call center volumes such as Modeling and Forecasting Call Center Arrivals \citep{ibrahim2016modeling}.
+  Many studies have been done working with call center volumes as presented in Modeling and Forecasting Call Center Arrivals \citep{ibrahim2016modeling}.
 Here an Autoregressive moving average (ARIMA) model is used, which is depicted in the paper as:
 \begin{equation}
   \label{eq:ARIMA Standard}
   \Phi(B)(x_i -\mu)=\theta_q(B)\varepsilon_t
 \end{equation}
-Ibrahim uses multiple ARIMA models to depict seasonality with a combonination of exponential smoothing. Holt-Winters smoothing is also used,
+Ibrahim uses multiple ARIMA models to depict seasonality with a combination of exponential smoothing. Holt-Winters smoothing is also used,
 with three equations of:
 \begin{equation}
   \label{eq:Holt-Winters}
@@ -62,28 +62,28 @@ with three equations of:
   \label{eq:Holt-Winters3}
   S_t=\alpha_2(X_t-M_t) +(1-\alpha_2)S_{t-s},
 \end{equation}
-where $B_{t}$ is the slope component, $M_{t}$ is the level component, and $S_{t}$ is the seasonal component, and s is the period of seasonality.
-Arima models are a great model to create as "they allow the  representation of a  wide array of potentially useful predictor functions in  models  which contain relatively few parameters" \citep{newbold1983arima}.
+where $B_{t}$ is the slope component, $M_{t}$ is the level component, $S_{t}$ is the seasonal component, and s is the period of seasonality.
+ARIMA models are a great model to create as "they allow the  representation of a  wide array of potentially useful predictor functions in  models  which contain relatively few parameters" \citep{newbold1983arima}.
 With the combination of Holt-Winters smoothing, Ibrahim creates a great model for forecasting call volume, however the paper never goes into detail about
-how many agents there should be. 
+how many agents there should be working at a set time. 
 
-  \citep{evensen1999effective} goes into detail about effectve service delivery stating the expecations of customers are of "function of
+  \citep{evensen1999effective} goes into detail about effective service delivery stating the expectations of customers are a "function of
 the customer's own experiences...and when judging their own service quality, financial instiutions need to evalute themselves on 
 objective measures which span across industries".When taking this into consideration, I focused my models on using a calls per agent approach,
-so agents are not overworked and can treat each member with respect and honor to represent the business in good light. \citep{avramidis2005modeling} confirms
-this as it is described as the "call-to-agent" problem, and that an efficiency-driven call center is important.
+so agents are not overworked and can treat each caller with respect while answering their concerns in a timely manner to represent the business in a good light. \citep{avramidis2005modeling} confirms
+this as it is described as the "call-to-agent assignment problem", and that an efficiency-driven call center is important.
 
 
-  The contributions of the paper creates models on the basis to maximize quality of the service in relation to the number of agents. 
+  The contributions of the paper creates models on the basis to maximize quality of service in relation to the number of agents. 
 Based on this, models were created to minimize:
 \begin{enumerate}
-  \item WaitTime
-  \item CallTime
-  \item Reduce GoalTime not being Met
-  \item Reduce Calls not being Handled
+  \item Wait Time
+  \item Call Time
+  \item Reduce the Amount of Agent Handle Time
+  \item Reduce the Amount of Calls not being handled
 \end{enumerate}
-The rest of the paper will go through the dataset and breaking it up to present a clear view on the historical data. I have also created a 
-forecast on the projected call volume throughout a week through a 15 minute interval.
+The remainder of the paper will present the dataset and break it into a clear view on the historical data. I have also created a 
+forecast on the projected call volume throughout a week on 15 minute intervals.
 
 
 \section*{Data}
@@ -94,12 +94,12 @@ forecast on the projected call volume throughout a week through a 15 minute inte
   AnsweredGoalMet, StartTime, EndTime, WaitTime, Holdtime, AgentTalkDuration, AgentHandleTime, WrapUpTime, DayoftheYear,
   WeekoftheYear, and NbrofAgents.
 \end{sloppypar}
-  It is important to note that AgentTalkDuration refers to the actual amount of time the agent the agent was talking while
+  It is important to acknowledge that AgentTalkDuration refers to the actual amount of time the agent the agent was talking while
 AbandonedYN refers to if the caller ended the call before speaking to a representative. The QueuedYN is if the member was put in a queue and had to wait to speak to an agent.
 The queue is an automated service or an IVR (Interactive Voice Response). The latest generation of speech-recognition technology allows
 IVRs to interpret complex user commands, so customers may be able to “self-serve”, i.e., complete the service interaction at the IVR. \citep{avramidis2005modeling}.
 Holdtime is how long the member waits when an agent places on them hold, while waittime is how long they have to wait before someone answers there call.
-WrapUpTime refers to how long the member takes to hang up the phone after the agent stops talk. AgentHandleTime is the total of Holdtime, WrapUpTime, and AgentHandleTime.
+WrapUpTime refers to how long the member takes to hang up the phone after the agent stops talk. AgentHandleTime is the total of Holdtime, WrapUpTime, and AgentTalkDuration combined.
 
 
 \section*{Methods}
