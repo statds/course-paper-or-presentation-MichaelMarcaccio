@@ -74,7 +74,7 @@ INTERACTIONOUTCOME_times <- callData_rduce2 %>%
                    wrap_avg = mean(WRAPUPTIME), 
                    totalTalk_avg = mean(AGENTHANDLETIME))
 
-
+INTERACTIONOUTCOME_times
 
 
 
