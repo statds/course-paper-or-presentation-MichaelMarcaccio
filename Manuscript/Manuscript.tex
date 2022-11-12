@@ -186,6 +186,7 @@ goal time to be. Average Interaction Value was based off a variable that was cre
   \item Multivariate normality,
   \item No or Little multicollinearity,
   \item No auto-correlation,
+  \item Homoscedasticity
 \end{enumerate} Multicollinearity refers to the occurrence of high intercorrelations among two or more independent variables in a multiple regression model.
 To prevent this, I soley focus on one variable at a time when making my models on agents. Homoscedasticity is an assumption there is equal or similar variances in different groups being compared.
 From here I then did a Correlation Plot:
@@ -194,7 +195,7 @@ From here I then did a Correlation Plot:
   \includegraphics[width=\textwidth]{Correlation.png}
   \caption{Correlation Between Variables.}
   \label{fig:Correlation}
-
+\end{figure}
 Here we see that correlations between Average Wait Time, Average Handle Time, Average Answer Goal Time, Average Score Answer Goal Time Met, and Ratio Calls Per Agent.
 We see that Calls Per Agent is correlated with all 4 variables in our models which was a great step to acheive. I then checked to see what the distribution was between calls per agent was throughout each day. 
   \begin{table}[H]
@@ -216,7 +217,6 @@ We see that Calls Per Agent is correlated with all 4 variables in our models whi
     \end{tabular}
     }
     \end{table}
-\end{figure}
 Here we see that the Calls Per Agent is highest on Friday. This further proves that Friday is the busiest. Note that these are on 15 minute intervals,
 so for example, the call center gets 3.17 calls every 15 minutes on average on a Monday. It was surpising to see that Friday was the second
 lowest staffed day of the week. A possible suggestion to the company would be add an agent on Friday. Members may be calling about last minute
@@ -225,7 +225,32 @@ this is not too suprising as many people like to sleep in on the weekends and no
 consistant in all aspects. Note that the reason why the "num15minPeriods" variable is not the same is due to the outliers in the dataset where individuals
 called either slightly before or after call center hours.
 \section*{Simulation}
-After seeing how consistent the call volume was, I decided to create a table and g
+After seeing how consistent the call volume was and how big of a sample size I had, I decided to create a table and go off total calls and use averages to project call volume per weekday with the 
+created variable called RatioDayPerWeek. This variable is the ratio of how many hours the call center was open historically on the day(Monday,Tuesday,Wednesday...) compared to all the total hours of all days.
+I was able to produce this table:
+\begin{table}[H]
+  \resizebox{\textwidth}{!} {
+  \begin{tabular}{ l | l | l | l | l |}
+    {\bf DayofWeek} & {\bf numberofCalls} & {\bf AvgCallsPerDay} & {\bf RatioDayPerWeek} & {\bf ProjectedCallsPerDay} \\
+  \hline
+  2 & 79785 & 670 & 0.193 & 642 \\
+  \hline
+  3 & 89121 & 655 & 0.188 & 628 \\
+  \hline
+  4 & 89428 & 653 & 0.188 & 625 \\
+  \hline
+  5 & 84918 & 624 & 0.180 & 598 \\
+  \hline
+  6 & 95588 & 693 & 0.199 & 664 \\
+  \hline
+  7 & 24285 & 183 & 0.0525 & 175\\
+  \end{tabular}
+  }
+  \end{table}
+This table shows that Friday accounts for 19.9 percent of all the hours in the week the call center is open, while Saturday only accounts
+5.25 percent of the hours. The only difference there is a different in ratio for Monday thru Thursday must be holidays, e.g. Thanksgiving. 
+The Projected Calls Per Day simply came from the total calls per week * the RatioDayPerWeek. We can also see this approach worked relatively well in the forecasting model. 
+We also see that the MAPE(Mean Absolute Percent Error) is 4.21 percent. For context, a MAPE score less than 5 is very accurate.
 
 
 \section*{Discussion}
