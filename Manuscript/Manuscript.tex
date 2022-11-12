@@ -161,7 +161,8 @@ as most people are working throughout the day.
   \end{tabular}
   }
   \end{table}
-Here it is prevalent that a majority of calls are handled. These variables played a key part in my models for the agents.
+Here it is prevalent that a majority of calls are handled. These variables played a key part in my models for the agents. It is also to see that 
+100 seconds is the cutoff for most people that Abandoned. That could be a goal for this bank to get too, to prevent more Abandoned calls. 
 \section*{Methods}
 When seeing these patterns, I did not see much seasonality in the data. While there was a clear jump in volume based on time, I did not see much in regards
 to year, month, or day. I then confirmed this by making one last histogram.
@@ -251,6 +252,47 @@ This table shows that Friday accounts for 19.9 percent of all the hours in the w
 5.25 percent of the hours. The only difference there is a different in ratio for Monday thru Thursday must be holidays, e.g. Thanksgiving. 
 The Projected Calls Per Day simply came from the total calls per week * the RatioDayPerWeek. We can also see this approach worked relatively well in the forecasting model. 
 We also see that the MAPE(Mean Absolute Percent Error) is 4.21 percent. For context, a MAPE score less than 5 is very accurate.
+
+  Using this information, I was able to create a figure that showed the amount of expected calls per day per 15 minute intervals. 
+  \begin{figure}[H]
+    \centering
+    \includegraphics[width=\textwidth]{Forecast15MinPeriods.png}
+    \caption{This is the Forecast Per Day On a 15 Minute Intervals.}
+    \label{fig:Forecast}
+  \end{figure}
+Here we see that distinct pattern similar to the historical graph. The graph peaks at 9am and then slowly trails throughout the day.
+Note that the different colors represent the different days.
+
+In regards to forecasting the number of agents, I create one last table to see if there is a difference in AgentHandleTime and WaitTime
+by each 15 minute interval.
+\begin{table}[H]
+  \resizebox{\textwidth}{!} {
+  \begin{tabular}{ l | l | l | l | l | l | l |}
+    {\bf DayofWeek} & {\bf AvgNumCalls} & {\bf AvgNumAgents} & {\bf CallsPerAgent} & {\bf AvgAgentHandleTime} & {\bf AvgWaittime} & {\bf AvgInteractionValue}\\
+  \hline
+  2 & 2418 & 10.6 & 227 & 303 & 175 & 0.987 \\
+  \hline
+  3 & 2701 & 10.4 & 260 & 297 & 126 7 0.998\\
+  \hline
+  4 & 2710 & 10.7 & 254 & 297 & 80.9 & 0.987 \\
+  \hline
+  5 & 2573 & 10.2 & 253 & 289 & 87.1 & 0.988 \\
+  \hline
+  6 & 2897 & 9.93 & 292 & 293 & 88.2 & 0.987 \\
+  \hline
+  7 & 736 & 6.34 & 116 & 260 & 57.4 & 0.989\\
+  \end{tabular}
+  }
+  \end{table}
+Overall, we see that Friday continues to be the busiest days in terms of call volume but the least staffed days. However, a glaring note
+is how high the average waittime on Monday is. This may be suggesting that the subject matter of calls on Monday are more intense and urgent
+then the subject matter on a day like Saturday. With such a high wait time but not a bigger handle time, this also may be suggesting that
+employees are getting stressed out at lot more and may need more time to get themselves mentality ready to take the next call. It might be a good idea to add another employee for Mondays. 
+The other days appear to be relatively normal and Saturday is functioning very efficiently. With a waittime less than 60 seconds, there is no reason to change the staffing model for
+Saturday. 
+
+Next were Correlation tests 
+
 
 
 \section*{Discussion}

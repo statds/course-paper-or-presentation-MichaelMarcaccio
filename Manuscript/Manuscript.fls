@@ -762,6 +762,11 @@ INPUT ./Correlation.png
 INPUT Correlation.png
 INPUT ./Correlation.png
 INPUT ./Correlation.png
+INPUT ./Forecast15MinPeriods.png
+INPUT ./Forecast15MinPeriods.png
+INPUT Forecast15MinPeriods.png
+INPUT ./Forecast15MinPeriods.png
+INPUT ./Forecast15MinPeriods.png
 INPUT ./Manuscript.bbl
 INPUT Manuscript.bbl
 INPUT ./Manuscript.bbl
