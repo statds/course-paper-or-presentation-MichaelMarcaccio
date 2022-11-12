@@ -190,6 +190,16 @@ goal time to be. Average Interaction Value was based off a variable that was cre
   \item Homoscedasticity
 \end{enumerate} Multicollinearity refers to the occurrence of high intercorrelations among two or more independent variables in a multiple regression model.
 To prevent this, I soley focus on one variable at a time when making my models on agents. Homoscedasticity is an assumption there is equal or similar variances in different groups being compared.
+I used Pearson's correlation which states the following assumptions,
+\begin{enumerate}
+  \item The Variables must be continous,
+  \item The Variables are paired,
+  \item There should be an independece of cases,
+  \item Both Variables should follow a normal distribution,
+  \item There should be a linear relationship,
+  \item Homoscedasticity,
+  \item There should be no outliers,
+\end{enumerate}
 From here I then did a Correlation Plot:
 \begin{figure}[H]
   \centering
@@ -272,7 +282,7 @@ by each 15 minute interval.
   \hline
   2 & 2418 & 10.6 & 227 & 303 & 175 & 0.987 \\
   \hline
-  3 & 2701 & 10.4 & 260 & 297 & 126 7 0.998\\
+  3 & 2701 & 10.4 & 260 & 297 & 126 & 0.998\\
   \hline
   4 & 2710 & 10.7 & 254 & 297 & 80.9 & 0.987 \\
   \hline
@@ -291,10 +301,36 @@ employees are getting stressed out at lot more and may need more time to get the
 The other days appear to be relatively normal and Saturday is functioning very efficiently. With a waittime less than 60 seconds, there is no reason to change the staffing model for
 Saturday. 
 
-Next were Correlation tests 
-
-
-
+  From there I ran Correlation between CallsPerAgent and the dependent variables. The Pearson Product Moment Correlation test can take a range of values from 1 to -1. A value of 0 shows there is no association between two variables. 
+A value greater than 0 indicates a positive association, meaning as the value of the dependent variable increases so does the independent variable. A value less than 0 indicates a negative association, meaning as the dependent 
+variable decreases so does the independent variable. The stronger the correlation between the variables the higher it is to 1 or -1.  The 4 dependent variables were Average Wait Time, Average Call Time, Average Goal Being Met, Average Interaction Value. 
+The one dependent variable is CallsPerAgent. In this case, the Calltime is the same as Handletime, which is the combination of Wait time, Hold time, and Wrap Up Time. 
+The Average Goal Being Met would be whatever the business establishes in seconds of  how long they would want a call center call to last. Average Interaction Value would be at what percentage 
+they want calls being "Handled" or taken by an agent in anyway. 
+\begin{table}[H]
+  \resizebox{\textwidth}{!} {
+  \begin{tabular}{ l | l |}
+    {\bf Dependent Variable} & {\bf Correlation Coefficient}\\
+  \hline
+  Wait Time& 0.405 \\
+  \hline
+  Call Time& 0.238\\
+  \hline
+  Goal Met& -0.496  \\
+  \hline
+  Interaction Value& 0.484\\
+  \end{tabular}
+  }
+  \end{table}
+Typically, a Pearson's coefficient ranging between plus or minus .3 represents a small association, while a Pearson's coefficient
+ranging between plus or minus .3 to .5 represents a medium association, and anything over plus or minus .5 represents a large association.
+Wait Time and Calls Per Agent have a medium positive relationship which states as Calls Per Agent increases, so does the Wait Time for 
+each Caller. Call Time and Calls Per Agent have a small positive relationship which states as Calls Per Agent increases, so does the 
+Call Time. Goal Time and Calls Per Agents have the strongest relationship, in this case a negative medium relationship, which states as
+Calls Per Agents increases, the Goal Being Met decreases. This means the Average Goal Time is nothing being hit consistently when Calls 
+are increasing. Interaction Value and Calls Per Agent have a medium positive relationship. However, in theory, as calls increase there should
+be more abandoned calls, but according to Pearsons Coefficient this is not the case. So while this relationship may not be a linear one,
+I will still present a model for it.
 \section*{Discussion}
 
 
