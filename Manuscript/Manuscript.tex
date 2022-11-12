@@ -19,7 +19,7 @@
 \MakeOuterQuote{"}
 \title{Call Center Regression Data Analysis}
 
-\author{Michael  Marcaccio}
+\author{Michael Marcaccio}
 
 \date{November 14 2022}
 
@@ -40,9 +40,9 @@
 \section*{Introduction}
   With over 15 million people employed, a predicted compound annual growth rate (CAGR) of 5.6 percent between 2020 and 2027, and with over 28,000 locations
 in the United States alone, call centers play a pivotal role in a business' success. Call centers are a key part of customer service
-that will save a company time, money, and unneccessary obstacles. In the banking industry, calls can range from inquires, transfers, 
-payments, reporting, to processing. This means members could call about their account balance, credit card bills, loan applications, 
-or unauthorized transactions. It is crucial that a bank is prepared for spikes in calls and have agents knowledgeable in all aspects of banking.
+that will save a company time, money, and unneccessary obstacles. \citep{feinberg2002operational} claims call centers serve as a source of service recovery, added value, market intelligence, and strategic advantage
+In the banking industry, calls can range from inquires, transfers, payments, reporting, to processing. This means members could call about their account balance, credit card bills, loan applications, 
+or unauthorized transactions. It is crucial that a bank is prepared for spikes in calls and have agents knowledgeable in all aspects of banking and are capable of handling customer impatience. \citep{brown2005statistical} 
 
 
   Many studies have been done working with call center volumes as presented in Modeling and Forecasting Call Center Arrivals \citep{ibrahim2016modeling}.
@@ -108,7 +108,7 @@ WrapUpTime refers to how long the member takes to hang up the phone after the ag
 this is a great opportunity for data analysis and modeling. With this dataset, I know when doing calculations such as finding means and creating plots, 
 I will able to accurately give a truly image of call center volume and agent information to a small period of time such as 15 minutes.
   I did do some exploratory data analysis by creating figures that represent call center volume by the year, month, day of week, and time. 
-I also created a tabled that shows the average wait time, talk time, hold time, wrap up time, and count of every Interaction Outcome.
+I also created a table that shows the average wait time, talk time, hold time, wrap up time, and count of every Interaction Outcome.
 \begin{figure}[H]
   \centering
   \includegraphics[width=\textwidth]{By Year.png}
@@ -141,7 +141,8 @@ varying hours of the call center. Monday through Thursday, the call center is op
 \end{figure}
 The call center consistently has a spike around 9am throughout the 3 years. This is suprising as the call center opens at 8am. This is important to be aware of when
 creating a forecasting model and having the banks employees be at their station at 9am. The decreasing trend throughout the day is not suprising
-as most people are working throughout the day.
+as most people are working throughout the day. From a managers view, important to have your best employees not on break during that time so they are ready to solve 
+any complications that come up. \citep{rafaeli2008impact}
 \begin{table}[H]
   \resizebox{\textwidth}{!} {
   \begin{tabular}{ l | l | l | l | l | l | l}
@@ -162,7 +163,11 @@ as most people are working throughout the day.
   }
   \end{table}
 Here it is prevalent that a majority of calls are handled. These variables played a key part in my models for the agents. It is also to see that 
-100 seconds is the cutoff for most people that Abandoned. That could be a goal for this bank to get too, to prevent more Abandoned calls. 
+100 seconds is the cutoff for most people that Abandoned. That could be a goal for this bank to get too, to prevent more Abandoned calls. While 
+the number itself is not significant, Avramidis explains that "The maximal time a customer is willing to wait in queue is his patience time, A, also known as time-to-abandonment. The
+time he must wait before beginning service is his virtual queue time, V. The actual wait time is W = min(A,V), terminated by either abandonment (whenever V > W), or beginning of service (V = W).
+In heavy traffic, even a small fraction of calls that abandon the queue can have a dramatic effect on system performance" \citep{avramidis2005modeling}. This means that just reducing seconds
+in waittime could allow for a more efficient contact call system.
 \section*{Methods}
 When seeing these patterns, I did not see much seasonality in the data. While there was a clear jump in volume based on time, I did not see much in regards
 to year, month, or day. I then confirmed this by making one last histogram.
@@ -190,7 +195,10 @@ goal time to be. Average Interaction Value was based off a variable that was cre
   \item Homoscedasticity
 \end{enumerate} Multicollinearity refers to the occurrence of high intercorrelations among two or more independent variables in a multiple regression model.
 To prevent this, I soley focus on one variable at a time when making my models on agents. Homoscedasticity is an assumption there is equal or similar variances in different groups being compared.
-I used Pearson's correlation which states the following assumptions,
+Logistic and Linear Regression Assumptions: Violation Recognition and Control goes into detail about this stating, "it is necessary to make a note about sample size for this type of regression model. In Linear
+regression the sample size rule of thumb is that the regression analysis requires at least 20 cases per
+independent variable in the analysis"\citep{schreiber2018logistic} 
+I also used Pearson's correlation which states the following assumptions,
 \begin{enumerate}
   \item The Variables must be continous,
   \item The Variables are paired,
@@ -200,6 +208,11 @@ I used Pearson's correlation which states the following assumptions,
   \item Homoscedasticity,
   \item There should be no outliers,
 \end{enumerate}
+The Pearsons coefficient is given below:
+\begin{equation}
+  \label{eq:Pearson}
+r= \Sigma((x_i - \bar{x})(y_i-\bar{y}))/(\sqrt{\Sigma{(x_i-\bar{x})^2}\Sigma{(y_i-\bar{y})^2}}),
+\end{equation}
 From here I then did a Correlation Plot:
 \begin{figure}[H]
   \centering
@@ -273,7 +286,7 @@ We also see that the MAPE(Mean Absolute Percent Error) is 4.21 percent. For cont
 Here we see that distinct pattern similar to the historical graph. The graph peaks at 9am and then slowly trails throughout the day.
 Note that the different colors represent the different days.
 
-In regards to forecasting the number of agents, I create one last table to see if there is a difference in AgentHandleTime and WaitTime
+In regards to forecasting the number of agents, I created one last table to see if there is a difference in AgentHandleTime and WaitTime
 by each 15 minute interval.
 \begin{table}[H]
   \resizebox{\textwidth}{!} {
@@ -294,7 +307,7 @@ by each 15 minute interval.
   \end{tabular}
   }
   \end{table}
-Overall, we see that Friday continues to be the busiest days in terms of call volume but the least staffed days. However, a glaring note
+  Overall, we see that Friday continues to be the busiest days in terms of call volume but the least staffed days. However, a glaring note
 is how high the average waittime on Monday is. This may be suggesting that the subject matter of calls on Monday are more intense and urgent
 then the subject matter on a day like Saturday. With such a high wait time but not a bigger handle time, this also may be suggesting that
 employees are getting stressed out at lot more and may need more time to get themselves mentality ready to take the next call. It might be a good idea to add another employee for Mondays. 
@@ -368,7 +381,35 @@ I will still present a model for it.
 R-squared values range from 0 to 1. A R-squared value of 1 means that all movements of a variable are completely explained by another variable. 
 Overall, the higher the R-squared the better.
 \section*{Discussion}
+Overall, the best agent model would be the model with the highest R-squared value and Pearson Coefficient. In this case, this would be
+AvgGoalMet= 0.986 - 0.216*CallsPerAgent. A close second place would be AvgWaittime= -5.292 + 61.148*CallsPerAgent, as it had a decent 
+Pearson coefficient and R-squared value. Unfortunately, because of the Pearsons Coefficient I would not recommend the Interaction Value model however even though it had a good 
+r-squared value. Overall the other 3 models are would suggest to an individual to use to determine how many agents
+there business to have. Unfortunately, there are so many aspects to just this. In regards to a business perspective, the call center must have
+a budget so it is a difficult road to navigate. But, I believe it is possible to find a balance in between to ultimately maximize efficiency.
+We were also able to forecast call center volume using historical data and the ratio of how many hours the call center is open compared to each day to
+a week. 
 
+  The biggest limitation I would say was that there is no right answer to answering the calls per agent problem. In an ideal situation, you would have
+plenty of agents so waittime is completely reduced. However that is not efficient or plausible. I also do wish I knew the answer to what
+the actual Goal time was, this would help me be more confident in my model I created. I did try to create a model to the ratio of Calls Per Agent,
+but Unfortunately the parameters estimates were simply just inaccurate. 
+
+Another challenge was dealing with the time complexities in the dataset. There are 6 days of the week, 47 15-minute-intervals across any day, which each occur a different number of times,
+and 213 15-minute-intervals across each week. This does not average out between days of the week. There was also 139 weeks in the data, 971 days in all the data, and
+27377 15-minute-intervals in all the data. So this fails to account for discrepancies in between days of the week. Also, Call time and any values
+about the all are data explicitly about the call so they are in the row in the itself, so we have to normalize the number of agents by number of calls During
+that period recorded before we run a model comparing both values. So overall, there was a lot of data cleaning and preparing needed in this dataset, that
+took time away from the data analysis.
+
+  I still believe this study can be expanded on. Monday has a wait time of 175 seconds while Friday has a wait time of 88.2 seconds. Possibly multivariate regression technqiues could be used to model the number of agents needed.
+With the data at my hands, I could also try to answer questions such as if call length is dependenton call reason or even do an analysis on if all agents are performing
+on the same level. In detail, \citep{evensen1999effective} believes that "Since the primary interface between a financial institution and its customer is a service
+representative, this element strongly influences an institution's ability to deliver quality service.An organization’s human resource (HR) practices effect how well its employees are able to perform. More
+specifically, human resource practices directly influence how knowledgeable an employee is about the product offering, whether or not an employee is empowered to resolve customer issues in real time, and the
+level of turnover within the organization". This is an interesting point as one could analyze how Human Resources Data plays a role in qualities like AgentHandleTime that reflects on the agents performance. Another interesting question to look into was the abandonment 
+rate and if how many times someone will call back the same day. I personally did not look into the chat feature that much, but I am sure that there is some interesting information like if people tend to reuse often.
+Another topic of interest is how does call center volume change on when there is an information technology problem such as the online banking services having an outage?
 
 \bibliographystyle{chicago}
 \bibliography{Citations.bib}

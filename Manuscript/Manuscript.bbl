@@ -7,12 +7,29 @@ Avramidis, A.~N. and P.~L'Ecuyer (2005).
 \newblock In {\em Proceedings of the Winter Simulation Conference, 2005.}, pp.\
    9--pp. IEEE.
 
+\bibitem[\protect\citeauthoryear{Brown, Gans, Mandelbaum, Sakov, Shen, Zeltyn,
+  and Zhao}{Brown et~al.}{2005}]{brown2005statistical}
+Brown, L., N.~Gans, A.~Mandelbaum, A.~Sakov, H.~Shen, S.~Zeltyn, and L.~Zhao
+  (2005).
+\newblock Statistical analysis of a telephone call center: A queueing-science
+  perspective.
+\newblock {\em Journal of the American statistical association\/}~{\em
+  100\/}(469), 36--50.
+
 \bibitem[\protect\citeauthoryear{Evensen, Frei, and Harker}{Evensen
   et~al.}{1999}]{evensen1999effective}
 Evensen, A., F.~X. Frei, and P.~T. Harker (1999).
 \newblock {\em Effective call center management: evidence from financial
   services}.
 \newblock Citeseer.
+
+\bibitem[\protect\citeauthoryear{Feinberg, Hokama, Kadam, and Kim}{Feinberg
+  et~al.}{2002}]{feinberg2002operational}
+Feinberg, R.~A., L.~Hokama, R.~Kadam, and I.~Kim (2002).
+\newblock Operational determinants of caller satisfaction in the
+  banking/financial services call center.
+\newblock {\em International Journal of Bank Marketing\/}~{\em 20\/}(4),
+  174--180.
 
 \bibitem[\protect\citeauthoryear{Ibrahim, Ye, L’Ecuyer, and Shen}{Ibrahim
   et~al.}{2016}]{ibrahim2016modeling}
@@ -26,5 +43,19 @@ Newbold, P. (1983).
 \newblock Arima model building and the time series analysis approach to
   forecasting.
 \newblock {\em Journal of forecasting\/}~{\em 2\/}(1), 23--35.
+
+\bibitem[\protect\citeauthoryear{Rafaeli, Ziklik, and Doucet}{Rafaeli
+  et~al.}{2008}]{rafaeli2008impact}
+Rafaeli, A., L.~Ziklik, and L.~Doucet (2008).
+\newblock The impact of call center employees' customer orientation behaviors
+  on service quality.
+\newblock {\em Journal of service research\/}~{\em 10\/}(3), 239--255.
+
+\bibitem[\protect\citeauthoryear{Schreiber-Gregory, Jackson, and
+  Bader}{Schreiber-Gregory et~al.}{2018}]{schreiber2018logistic}
+Schreiber-Gregory, D., H.~Jackson, and K.~Bader (2018).
+\newblock Logistic and linear regression assumptions: Violation recognition and
+  control.
+\newblock {\em Henry M Jackson Foundation\/}.
 
 \end{thebibliography}

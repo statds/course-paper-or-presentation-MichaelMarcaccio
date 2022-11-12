@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.9.13)  12 NOV 2022 00:59
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.9.13)  12 NOV 2022 02:49
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -456,63 +456,63 @@ Package csquotes Info: Making character " active on input line 26.
  [1
 
 {c:/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2]
-<By Year.png, id=47, 650.43pt x 494.59781pt>
+<By Year.png, id=53, 650.43pt x 494.59781pt>
 File: By Year.png Graphic file (type png)
 <use By Year.png>
 Package pdftex.def Info: By Year.png  used on input line 114.
 (pdftex.def)             Requested size: 469.75502pt x 357.21954pt.
-<ByMonthVolume.png, id=48, 650.43pt x 494.59781pt>
+<ByMonthVolume.png, id=54, 650.43pt x 494.59781pt>
 File: ByMonthVolume.png Graphic file (type png)
 <use ByMonthVolume.png>
 Package pdftex.def Info: ByMonthVolume.png  used on input line 121.
 (pdftex.def)             Requested size: 469.75502pt x 357.21954pt.
  [3 <./By Year.png>]
-<CallVolumeByDayOfWeek.png, id=55, 650.43pt x 494.59781pt>
+<CallVolumeByDayOfWeek.png, id=61, 650.43pt x 494.59781pt>
 File: CallVolumeByDayOfWeek.png Graphic file (type png)
 <use CallVolumeByDayOfWeek.png>
 Package pdftex.def Info: CallVolumeByDayOfWeek.png  used on input line 129.
 (pdftex.def)             Requested size: 469.75502pt x 357.21954pt.
  [4 <./ByMonthVolume.png>]
-<CallVolumeByTimeOfDayGROUPEDbyYear.png, id=62, 650.43pt x 494.59781pt>
+<CallVolumeByTimeOfDayGROUPEDbyYear.png, id=68, 650.43pt x 494.59781pt>
 File: CallVolumeByTimeOfDayGROUPEDbyYear.png Graphic file (type png)
 <use CallVolumeByTimeOfDayGROUPEDbyYear.png>
 Package pdftex.def Info: CallVolumeByTimeOfDayGROUPEDbyYear.png  used on input line 138.
 (pdftex.def)             Requested size: 469.75502pt x 357.21954pt.
- [5 <./CallVolumeByDayOfWeek.png>]
-<SeasonalityOfCallVolume.png, id=69, 650.43pt x 494.59781pt>
+ [5 <./CallVolumeByDayOfWeek.png>] [6 <./CallVolumeByTimeOfDayGROUPEDbyYear.png>]
+<SeasonalityOfCallVolume.png, id=86, 650.43pt x 494.59781pt>
 File: SeasonalityOfCallVolume.png Graphic file (type png)
 <use SeasonalityOfCallVolume.png>
-Package pdftex.def Info: SeasonalityOfCallVolume.png  used on input line 171.
+Package pdftex.def Info: SeasonalityOfCallVolume.png  used on input line 176.
 (pdftex.def)             Requested size: 469.75502pt x 357.21954pt.
- [6 <./CallVolumeByTimeOfDayGROUPEDbyYear.png>] [7 <./SeasonalityOfCallVolume.png>]
-<Correlation.png, id=84, 679.63913pt x 438.73912pt>
+ [7 <./SeasonalityOfCallVolume.png>]
+<Correlation.png, id=98, 679.63913pt x 438.73912pt>
 File: Correlation.png Graphic file (type png)
 <use Correlation.png>
-Package pdftex.def Info: Correlation.png  used on input line 206.
+Package pdftex.def Info: Correlation.png  used on input line 219.
 (pdftex.def)             Requested size: 469.75502pt x 303.25249pt.
  [8] [9 <./Correlation.png>]
-<Forecast15MinPeriods.png, id=108, 1204.5pt x 723.45282pt>
+<Forecast15MinPeriods.png, id=125, 1204.5pt x 723.45282pt>
 File: Forecast15MinPeriods.png Graphic file (type png)
 <use Forecast15MinPeriods.png>
-Package pdftex.def Info: Forecast15MinPeriods.png  used on input line 269.
+Package pdftex.def Info: Forecast15MinPeriods.png  used on input line 282.
 (pdftex.def)             Requested size: 469.75502pt x 282.14546pt.
- [10] [11 <./Forecast15MinPeriods.png (PNG copy)>] [12] (./Manuscript.bbl) [13] (./Manuscript.aux)
+ [10] [11 <./Forecast15MinPeriods.png (PNG copy)>] [12] [13] (./Manuscript.bbl [14]) [15] (./Manuscript.aux)
 Package rerunfilecheck Info: File `Manuscript.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 12905 strings out of 475075
- 208901 string characters out of 5783001
- 678748 words of memory out of 5000000
- 34060 multiletter control sequences out of 15000+600000
+ 12925 strings out of 475075
+ 209379 string characters out of 5783001
+ 679072 words of memory out of 5000000
+ 34073 multiletter control sequences out of 15000+600000
  476200 words of font info for 52 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 72i,10n,77p,481b,625s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on Manuscript.pdf (13 pages, 6405604 bytes).
+ 72i,10n,77p,481b,622s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
+Output written on Manuscript.pdf (15 pages, 6423675 bytes).
 PDF statistics:
- 197 PDF objects out of 1000 (max. 8388607)
- 145 compressed objects within 2 object streams
- 55 named destinations out of 1000 (max. 500000)
+ 229 PDF objects out of 1000 (max. 8388607)
+ 173 compressed objects within 2 object streams
+ 62 named destinations out of 1000 (max. 500000)
  36 words of extra memory for PDF output out of 10000 (max. 10000000)
 
