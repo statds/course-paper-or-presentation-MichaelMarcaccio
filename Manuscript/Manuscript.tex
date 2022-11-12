@@ -105,10 +105,10 @@ Holdtime is how long the member waits when an agent places on them hold, while w
 WrapUpTime refers to how long the member takes to hang up the phone after the agent stops talk. AgentHandleTime is the total of Holdtime, WrapUpTime, and AgentTalkDuration combined.
 
   This data is allows me to easily answer the research question as I am using real-life data. With a huge sample size and many variables,
-there is a great opportunity for data analysis and modeling. With this dataset, I know when doing calculations such as finding means and creating plots, 
-they will able to accurately give a truly image of call center volume and agent information to a small period of time such as 15 minutes.
+this is a great opportunity for data analysis and modeling. With this dataset, I know when doing calculations such as finding means and creating plots, 
+I will able to accurately give a truly image of call center volume and agent information to a small period of time such as 15 minutes.
   I did do some exploratory data analysis by creating figures that represent call center volume by the year, month, day of week, and time. 
-I also created a tabled that shows the average wait time, talk time, hold time, wrap up time, and count of every interaction Outcome.
+I also created a tabled that shows the average wait time, talk time, hold time, wrap up time, and count of every Interaction Outcome.
 \begin{figure}[H]
   \centering
   \includegraphics[width=\textwidth]{By Year.png}
@@ -163,17 +163,69 @@ as most people are working throughout the day.
   \end{table}
 Here it is prevalent that a majority of calls are handled. These variables played a key part in my models for the agents.
 \section*{Methods}
-I created linear models to show the relationship between calls per agent and average waitime, holdtime, average goal met, and average 
+When seeing these patterns, I did not see much seasonality in the data. While there was a clear jump in volume based on time, I did not see much in regards
+to year, month, or day. I then confirmed this by making one last histogram.
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=\textwidth]{SeasonalityOfCallVolume.png}
+  \caption{Seasonality Of Call Volume .}
+  \label{fig:Seasonality}
+\end{figure}
+Here we do not see any clear pattern based on whether its winter, spring, summer, or fall. Overall, this was not too surpising.
+
+I also created linear models to show the relationship between calls per agent and average waitime, holdtime, average goal met, and average 
 interaction value. Average goal met was a variable created in relationship to the AnsweredGoalMet. AnsweredGoalMet was given in 1 and 0s, 
 1 if the goal was hit and 0 if it was not hit. This variable is very fluid, as each company has its own reasoning for what they want their
 goal time to be. Average Interaction Value was based off a variable that was created based on the InteractionOutcome. "Handled "got assigned 
 1 as it was a positive outcome and -1 for "Abandoned" and "Leave Number" as they were deemed negative. The others were considered neutral, for example
 "Not Specified", was given a 0. 
-Linear Regression is based off five key assumptions, there is a linear relationship, multivariate normality, No or little multicollinearity, No auto-correlation, 
-and Homoscedasticity. multicollinearity refers to 
 
+  Linear Regression is based off five key assumptions,
+  \begin{enumerate}
+  \item There is a Linear relationship,
+  \item Multivariate normality,
+  \item No or Little multicollinearity,
+  \item No auto-correlation,
+\end{enumerate} Multicollinearity refers to the occurrence of high intercorrelations among two or more independent variables in a multiple regression model.
+To prevent this, I soley focus on one variable at a time when making my models on agents. Homoscedasticity is an assumption there is equal or similar variances in different groups being compared.
+From here I then did a Correlation Plot:
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=\textwidth]{Correlation.png}
+  \caption{Correlation Between Variables.}
+  \label{fig:Correlation}
+
+Here we see that correlations between Average Wait Time, Average Handle Time, Average Answer Goal Time, Average Score Answer Goal Time Met, and Ratio Calls Per Agent.
+We see that Calls Per Agent is correlated with all 4 variables in our models which was a great step to acheive. I then checked to see what the distribution was between calls per agent was throughout each day. 
+  \begin{table}[H]
+    \resizebox{\textwidth}{!} {
+    \begin{tabular}{ l | l | l | l | l |}
+      {\bf DayofWeek} & {\bf AvgNumCalls} & {\bf AvgNumAgents} & {\bf CallsPerAgent} & {\bf Num15Periods} \\
+    \hline
+    2 & 3.17 & 10.3 & 0.308 & 38 \\
+    \hline
+    3 & 3.25 & 9.81 & 0.331 & 39 \\
+    \hline
+    4 & 3.17 & 10.4 & 0.305 & 38 \\
+    \hline
+    5 & 3.08 & 10.1 & 0.306 & 37 \\
+    \hline
+    6 & 3.83 & 8.82 & 0.435 & 46 \\
+    \hline
+    7 & 1.25 & 6.33  & 0.197 & 15 \\
+    \end{tabular}
+    }
+    \end{table}
+\end{figure}
+Here we see that the Calls Per Agent is highest on Friday. This further proves that Friday is the busiest. Note that these are on 15 minute intervals,
+so for example, the call center gets 3.17 calls every 15 minutes on average on a Monday. It was surpising to see that Friday was the second
+lowest staffed day of the week. A possible suggestion to the company would be add an agent on Friday. Members may be calling about last minute
+questions on Friday to enjoy the weekend and not have to call Saturday. In regards to Saturday, it is clear that is the least busiest day of the week,
+this is not too suprising as many people like to sleep in on the weekends and not worry about financial issues. Monday through Thursday is relatively
+consistant in all aspects. Note that the reason why the "num15minPeriods" variable is not the same is due to the outliers in the dataset where individuals
+called either slightly before or after call center hours.
 \section*{Simulation}
-
+After seeing how consistent the call volume was, I decided to create a table and g
 
 
 \section*{Discussion}

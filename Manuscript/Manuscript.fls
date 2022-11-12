@@ -752,6 +752,16 @@ INPUT CallVolumeByTimeOfDayGROUPEDbyYear.png
 INPUT ./CallVolumeByTimeOfDayGROUPEDbyYear.png
 INPUT ./CallVolumeByTimeOfDayGROUPEDbyYear.png
 INPUT c:/texlive/2022/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
+INPUT ./SeasonalityOfCallVolume.png
+INPUT ./SeasonalityOfCallVolume.png
+INPUT SeasonalityOfCallVolume.png
+INPUT ./SeasonalityOfCallVolume.png
+INPUT ./SeasonalityOfCallVolume.png
+INPUT ./Correlation.png
+INPUT ./Correlation.png
+INPUT Correlation.png
+INPUT ./Correlation.png
+INPUT ./Correlation.png
 INPUT ./Manuscript.bbl
 INPUT Manuscript.bbl
 INPUT ./Manuscript.bbl

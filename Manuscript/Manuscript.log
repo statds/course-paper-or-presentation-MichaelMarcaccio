@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.9.13)  11 NOV 2022 21:42
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.9.13)  11 NOV 2022 22:49
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -478,23 +478,35 @@ File: CallVolumeByTimeOfDayGROUPEDbyYear.png Graphic file (type png)
 <use CallVolumeByTimeOfDayGROUPEDbyYear.png>
 Package pdftex.def Info: CallVolumeByTimeOfDayGROUPEDbyYear.png  used on input line 138.
 (pdftex.def)             Requested size: 469.75502pt x 357.21954pt.
- [5 <./CallVolumeByDayOfWeek.png>] [6 <./CallVolumeByTimeOfDayGROUPEDbyYear.png>] (./Manuscript.bbl) [7] (./Manuscript.aux)
+ [5 <./CallVolumeByDayOfWeek.png>]
+<SeasonalityOfCallVolume.png, id=69, 650.43pt x 494.59781pt>
+File: SeasonalityOfCallVolume.png Graphic file (type png)
+<use SeasonalityOfCallVolume.png>
+Package pdftex.def Info: SeasonalityOfCallVolume.png  used on input line 170.
+(pdftex.def)             Requested size: 469.75502pt x 357.21954pt.
+ [6 <./CallVolumeByTimeOfDayGROUPEDbyYear.png>] [7 <./SeasonalityOfCallVolume.png>]
+<Correlation.png, id=84, 679.63913pt x 438.73912pt>
+File: Correlation.png Graphic file (type png)
+<use Correlation.png>
+Package pdftex.def Info: Correlation.png  used on input line 194.
+(pdftex.def)             Requested size: 469.75502pt x 303.25249pt.
+ [8] [9 <./Correlation.png>] (./Manuscript.bbl) [10] (./Manuscript.aux)
 Package rerunfilecheck Info: File `Manuscript.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 12852 strings out of 475075
- 208045 string characters out of 5783001
- 678422 words of memory out of 5000000
- 34035 multiletter control sequences out of 15000+600000
+ 12877 strings out of 475075
+ 208494 string characters out of 5783001
+ 678524 words of memory out of 5000000
+ 34049 multiletter control sequences out of 15000+600000
  476200 words of font info for 52 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 72i,10n,77p,481b,499s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 72i,13n,77p,481b,625s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on Manuscript.pdf (7 pages, 178763 bytes).
+Output written on Manuscript.pdf (10 pages, 1776018 bytes).
 PDF statistics:
- 139 PDF objects out of 1000 (max. 8388607)
- 99 compressed objects within 1 object stream
- 30 named destinations out of 1000 (max. 500000)
- 21 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 167 PDF objects out of 1000 (max. 8388607)
+ 119 compressed objects within 2 object streams
+ 39 named destinations out of 1000 (max. 500000)
+ 31 words of extra memory for PDF output out of 10000 (max. 10000000)
 
