@@ -4,8 +4,11 @@
 \usepackage{amsthm}
 \usepackage{float}
 \usepackage{graphicx}
+\usepackage{multirow}
 \usepackage{natbib}
+\usepackage{tabularx} 
 \usepackage{enumitem}
+\usepackage{array}
 \usepackage{booktabs}
 \usepackage{hyperref}
 \usepackage[utf8]{inputenc}
@@ -101,14 +104,73 @@ IVRs to interpret complex user commands, so customers may be able to “self-ser
 Holdtime is how long the member waits when an agent places on them hold, while waittime is how long they have to wait before someone answers there call.
 WrapUpTime refers to how long the member takes to hang up the phone after the agent stops talk. AgentHandleTime is the total of Holdtime, WrapUpTime, and AgentTalkDuration combined.
 
-
-\section*{Methods}
+  This data is allows me to easily answer the research question as I am using real-life data. With a huge sample size and many variables,
+there is a great opportunity for data analysis and modeling. With this dataset, I know when doing calculations such as finding means and creating plots, 
+they will able to accurately give a truly image of call center volume and agent information to a small period of time such as 15 minutes.
+  I did do some exploratory data analysis by creating figures that represent call center volume by the year, month, day of week, and time. 
+I also created a tabled that shows the average wait time, talk time, hold time, wrap up time, and count of every interaction Outcome.
 \begin{figure}[H]
-    \centering
-    \includegraphics[width=200pt,height=200pt]{By Year.png}
-    \caption{This is my first figure.}
-    \label{fig:Year}
-  \end{figure}
+  \centering
+  \includegraphics[width=\textwidth]{By Year.png}
+  \caption{Call Volume Grouped by Year.}
+  \label{fig:Year}
+\end{figure}
+Here we can see that 2021 has the highest call volume. Please Note that 2020 only has 11 months, while 2020 only has 10. This may be why the data appears skewed.
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=\textwidth]{ByMonthVolume.png}
+  \caption{Call Volume Grouped by Month.}
+  \label{fig:Month}
+\end{figure}
+When grouped by month, we can see an interesting peak around April. This may be because that is tax season and members are calling for tax information.
+Also April 2020 may have a higher peak than April 2021, due to COVID-19. During that time, many individuals were eligble for a 1,200 dollar stimulus check.
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=\textwidth]{CallVolumeByDayOfWeek.png}
+  \caption{Call Volume Grouped by Day.}
+  \label{fig:Day}
+\end{figure}
+With Sunday representing 1, we can see that most calls happen on a Friday. Saturday has an extremely low count. This can be explained due to the
+varying hours of the call center. Monday through Thursday, the call center is open 8am to 5pm, a total of 9 hours. Friday the call center is open
+8am-7pm, a total of 11 hours. Saturday the call center is only open 8:30 am to 12pm, a total of 3 and a half hours.
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=\textwidth]{CallVolumeByTimeOfDayGROUPEDbyYear.png}
+  \caption{Call Volume Grouped by Time.}
+  \label{fig:Timeoneday}
+\end{figure}
+The call center consistently has a spike around 9am throughout the 3 years. This is suprising as the call center opens at 8am. This is important to be aware of when
+creating a forecasting model and having the banks employees be at their station at 9am. The decreasing trend throughout the day is not suprising
+as most people are working throughout the day.
+\begin{table}[H]
+  \resizebox{\textwidth}{!} {
+  \begin{tabular}{ l | l | l | l | l | l | l}
+    {\bf Outcome} & {\bf Count} & {\bf Wait Avg} & {\bf Talk Avg} & {\bf Hold Avg} & {\bf Wrap Avg} & {\bf Total Talk Avg} \\
+  \hline
+  Abandoned & 2364 & 100 & 11.3 & 0.06 & 2.40 & 13.8 \\
+  \hline
+  Handled & 460047 & 107 & 253 & 26.2 & 16.3 & 295\\
+  \hline
+  Leave Number & 411 & 214 & 66 & 6.18 & 7.80 & 80\\
+  \hline
+  Not Specified & 299 & 1.21 & 120 & 0.278 & 3.24 & 123\\
+  \hline
+  Service Unavailable & 1 & 0 & 0 & 0 & 0 & 0\\
+  \hline
+  Wrong Number & 3 & 357 & 0 & 0 & 12 & 12\\
+  \end{tabular}
+  }
+  \end{table}
+Here it is prevalent that a majority of calls are handled. These variables played a key part in my models for the agents.
+\section*{Methods}
+I created linear models to show the relationship between calls per agent and average waitime, holdtime, average goal met, and average 
+interaction value. Average goal met was a variable created in relationship to the AnsweredGoalMet. AnsweredGoalMet was given in 1 and 0s, 
+1 if the goal was hit and 0 if it was not hit. This variable is very fluid, as each company has its own reasoning for what they want their
+goal time to be. Average Interaction Value was based off a variable that was created based on the InteractionOutcome. "Handled "got assigned 
+1 as it was a positive outcome and -1 for "Abandoned" and "Leave Number" as they were deemed negative. The others were considered neutral, for example
+"Not Specified", was given a 0. 
+Linear Regression is based off five key assumptions, there is a linear relationship, multivariate normality, No or little multicollinearity, No auto-correlation, 
+and Homoscedasticity. multicollinearity refers to 
 
 \section*{Simulation}
 

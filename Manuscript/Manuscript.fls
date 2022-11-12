@@ -188,6 +188,17 @@ INPUT c:/texlive/2022/texmf-dist/tex/latex/graphics-def/pdftex.def
 INPUT c:/texlive/2022/texmf-dist/tex/latex/graphics-def/pdftex.def
 INPUT c:/texlive/2022/texmf-dist/tex/latex/graphics-def/pdftex.def
 INPUT c:/texlive/2022/texmf-dist/tex/latex/graphics-def/pdftex.def
+INPUT c:/texlive/2022/texmf-dist/tex/latex/multirow/multirow.sty
+INPUT c:/texlive/2022/texmf-dist/tex/latex/multirow/multirow.sty
+INPUT c:/texlive/2022/texmf-dist/tex/latex/multirow/multirow.sty
+INPUT c:/texlive/2022/texmf-dist/tex/latex/multirow/multirow.sty
+INPUT c:/texlive/2022/texmf-dist/tex/latex/multirow/multirow.sty
+INPUT c:/texlive/2022/texmf-dist/tex/latex/multirow/multirow.sty
+INPUT c:/texlive/2022/texmf-dist/tex/latex/multirow/multirow.sty
+INPUT c:/texlive/2022/texmf-dist/tex/latex/multirow/multirow.sty
+INPUT c:/texlive/2022/texmf-dist/tex/latex/multirow/multirow.sty
+INPUT c:/texlive/2022/texmf-dist/tex/latex/multirow/multirow.sty
+INPUT c:/texlive/2022/texmf-dist/tex/latex/multirow/multirow.sty
 INPUT c:/texlive/2022/texmf-dist/tex/latex/natbib/natbib.sty
 INPUT c:/texlive/2022/texmf-dist/tex/latex/natbib/natbib.sty
 INPUT c:/texlive/2022/texmf-dist/tex/latex/natbib/natbib.sty
@@ -199,6 +210,28 @@ INPUT c:/texlive/2022/texmf-dist/tex/latex/natbib/natbib.sty
 INPUT c:/texlive/2022/texmf-dist/tex/latex/natbib/natbib.sty
 INPUT c:/texlive/2022/texmf-dist/tex/latex/natbib/natbib.sty
 INPUT c:/texlive/2022/texmf-dist/tex/latex/natbib/natbib.sty
+INPUT c:/texlive/2022/texmf-dist/tex/latex/tools/tabularx.sty
+INPUT c:/texlive/2022/texmf-dist/tex/latex/tools/tabularx.sty
+INPUT c:/texlive/2022/texmf-dist/tex/latex/tools/tabularx.sty
+INPUT c:/texlive/2022/texmf-dist/tex/latex/tools/tabularx.sty
+INPUT c:/texlive/2022/texmf-dist/tex/latex/tools/tabularx.sty
+INPUT c:/texlive/2022/texmf-dist/tex/latex/tools/tabularx.sty
+INPUT c:/texlive/2022/texmf-dist/tex/latex/tools/tabularx.sty
+INPUT c:/texlive/2022/texmf-dist/tex/latex/tools/tabularx.sty
+INPUT c:/texlive/2022/texmf-dist/tex/latex/tools/tabularx.sty
+INPUT c:/texlive/2022/texmf-dist/tex/latex/tools/tabularx.sty
+INPUT c:/texlive/2022/texmf-dist/tex/latex/tools/tabularx.sty
+INPUT c:/texlive/2022/texmf-dist/tex/latex/tools/array.sty
+INPUT c:/texlive/2022/texmf-dist/tex/latex/tools/array.sty
+INPUT c:/texlive/2022/texmf-dist/tex/latex/tools/array.sty
+INPUT c:/texlive/2022/texmf-dist/tex/latex/tools/array.sty
+INPUT c:/texlive/2022/texmf-dist/tex/latex/tools/array.sty
+INPUT c:/texlive/2022/texmf-dist/tex/latex/tools/array.sty
+INPUT c:/texlive/2022/texmf-dist/tex/latex/tools/array.sty
+INPUT c:/texlive/2022/texmf-dist/tex/latex/tools/array.sty
+INPUT c:/texlive/2022/texmf-dist/tex/latex/tools/array.sty
+INPUT c:/texlive/2022/texmf-dist/tex/latex/tools/array.sty
+INPUT c:/texlive/2022/texmf-dist/tex/latex/tools/array.sty
 INPUT c:/texlive/2022/texmf-dist/tex/latex/enumitem/enumitem.sty
 INPUT c:/texlive/2022/texmf-dist/tex/latex/enumitem/enumitem.sty
 INPUT c:/texlive/2022/texmf-dist/tex/latex/enumitem/enumitem.sty
@@ -210,6 +243,7 @@ INPUT c:/texlive/2022/texmf-dist/tex/latex/enumitem/enumitem.sty
 INPUT c:/texlive/2022/texmf-dist/tex/latex/enumitem/enumitem.sty
 INPUT c:/texlive/2022/texmf-dist/tex/latex/enumitem/enumitem.sty
 INPUT c:/texlive/2022/texmf-dist/tex/latex/enumitem/enumitem.sty
+INPUT c:/texlive/2022/texmf-dist/tex/latex/tools/array.sty
 INPUT c:/texlive/2022/texmf-dist/tex/latex/booktabs/booktabs.sty
 INPUT c:/texlive/2022/texmf-dist/tex/latex/booktabs/booktabs.sty
 INPUT c:/texlive/2022/texmf-dist/tex/latex/booktabs/booktabs.sty
@@ -702,6 +736,22 @@ INPUT ./By Year.png
 INPUT By Year.png
 INPUT ./By Year.png
 INPUT ./By Year.png
+INPUT ./ByMonthVolume.png
+INPUT ./ByMonthVolume.png
+INPUT ByMonthVolume.png
+INPUT ./ByMonthVolume.png
+INPUT ./ByMonthVolume.png
+INPUT ./CallVolumeByDayOfWeek.png
+INPUT ./CallVolumeByDayOfWeek.png
+INPUT CallVolumeByDayOfWeek.png
+INPUT ./CallVolumeByDayOfWeek.png
+INPUT ./CallVolumeByDayOfWeek.png
+INPUT ./CallVolumeByTimeOfDayGROUPEDbyYear.png
+INPUT ./CallVolumeByTimeOfDayGROUPEDbyYear.png
+INPUT CallVolumeByTimeOfDayGROUPEDbyYear.png
+INPUT ./CallVolumeByTimeOfDayGROUPEDbyYear.png
+INPUT ./CallVolumeByTimeOfDayGROUPEDbyYear.png
+INPUT c:/texlive/2022/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
 INPUT ./Manuscript.bbl
 INPUT Manuscript.bbl
 INPUT ./Manuscript.bbl
