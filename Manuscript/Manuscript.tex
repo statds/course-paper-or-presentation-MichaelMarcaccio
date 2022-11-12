@@ -331,6 +331,42 @@ Calls Per Agents increases, the Goal Being Met decreases. This means the Average
 are increasing. Interaction Value and Calls Per Agent have a medium positive relationship. However, in theory, as calls increase there should
 be more abandoned calls, but according to Pearsons Coefficient this is not the case. So while this relationship may not be a linear one,
 I will still present a model for it.
+  
+  Here are the linear models:
+  \begin{equation}
+    \label{eq:Wait Time}
+  AvgWaittime= -5.292 + 61.148*CallsPerAgent,
+  \end{equation}
+  \begin{equation}
+    \label{eq:Call Time}
+  AvgCallTime = -256.252 + 20.115*CallsPerAgent,
+  \end{equation}
+  \begin{equation}
+    \label{eq:Goal Met}
+  AvgGoalMet= 0.986 - 0.216*CallsPerAgent,
+  \end{equation}
+  \begin{equation}
+    \label{eq:InteractionValue}
+  AvgInteractionValue= 0.97 + 0.00989*CallsPerAgent,
+  \end{equation}
+
+  \begin{table}[H]
+    \resizebox{\textwidth}{!} {
+    \begin{tabular}{ l | l |}
+      {\bf Dependent Variable} & {\bf R-squared Value}\\
+    \hline
+    Wait Time& 0.1642 \\
+    \hline
+    Call Time& 0.0569\\
+    \hline
+    Goal Met& 0.2458\\
+    \hline
+    Interaction Value& 0.234\\
+    \end{tabular}
+    }
+    \end{table}
+R-squared values range from 0 to 1. A R-squared value of 1 means that all movements of a variable are completely explained by another variable. 
+Overall, the higher the R-squared the better.
 \section*{Discussion}
 
 
