@@ -33,7 +33,7 @@
  models were created to predict the number of agents needed to meet critical attributes such as waittime, calltime, and holdtime. 
  Forecasting gives businesses the ability to make informed business decision and develop data-driven strategies. In the literature it is very
  common to see call center volume being predicted using different techniques, but there is very limited studies on attempting to correlate
- the number of agents needed. Through Regression techniques, there are 8 models proposed to model the number of agents needed based on waittime,
+ the number of agents needed. Through Regression techniques, there are 4 models proposed to model the number of agents needed based on waittime,
  calltime, goaltime, and the amount of calls handled.
 \end{abstract}
 
@@ -379,7 +379,8 @@ I will still present a model for it.
     }
     \end{table}
 R-squared values range from 0 to 1. A R-squared value of 1 means that all movements of a variable are completely explained by another variable. 
-Overall, the higher the R-squared the better.
+Overall, the higher the R-squared the better. The model with Goal Met as the dependent variable has the highest R-square value of 0.2458, followed by
+the model with Interaction value with an R-squared value of 0.234, then Wait time with a R-squared value of 0.1642, and lastly Call time with a R-squared value of 0.0569.
 \section*{Discussion}
 Overall, the best agent model would be the model with the highest R-squared value and Pearson Coefficient. In this case, this would be
 AvgGoalMet= 0.986 - 0.216*CallsPerAgent. A close second place would be AvgWaittime= -5.292 + 61.148*CallsPerAgent, as it had a decent 
