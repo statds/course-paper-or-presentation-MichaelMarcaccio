@@ -91,22 +91,23 @@ forecast on the projected call volume throughout a week on 15 minute intervals.
 
 \section*{Data}
 \begin{sloppypar}
-  The data comes from an undisclosed bank where I wrote two SQL queries to obtain. This comes directly from the banks records dating back from Febuary 2020
-  to Septemeber 2022, and I was lucky enough to do a data analysis on real-life data. This dataset consists of 466,565 observations of 31 variables. 
+  The data comes from an undisclosed bank where I wrote two SQL queries to obtain real life data points on their Call Center. This comes directly from the banks records dating back from Febuary 2020
+  to Septemeber 2022, in which I am lucky enough to do a data analysis on. This dataset consists of 466,565 observations of 31 variables. 
   Some significant variables consist of Calldate, Caller_ID, Caller_ID, QueuedYN, AnsweredYN, AbandonedYN, QueuedName, InteractionOutcome, 
   AnsweredGoalMet, StartTime, EndTime, WaitTime, Holdtime, AgentTalkDuration, AgentHandleTime, WrapUpTime, DayoftheYear,
   WeekoftheYear, and NbrofAgents.
 \end{sloppypar}
   It is important to acknowledge that AgentTalkDuration refers to the actual amount of time the agent the agent was talking while
-AbandonedYN refers to if the caller ended the call before speaking to a representative. The QueuedYN is if the member was put in a queue and had to wait to speak to an agent.
+AbandonedYN refers to if the caller ended the call before speaking to a representative. The QueuedYN is if the member was put in a queue and had to wait to speak to an agent. 
+For both AbandonedYN and QueuedYN, Y stands for Yes and N stands for No.
 The queue is an automated service or an IVR (Interactive Voice Response). The latest generation of speech-recognition technology allows
 IVRs to interpret complex user commands, so customers may be able to “self-serve”, i.e., complete the service interaction at the IVR. \citep{avramidis2005modeling}.
-Holdtime is how long the member waits when an agent places on them hold, while waittime is how long they have to wait before someone answers there call.
-WrapUpTime refers to how long the member takes to hang up the phone after the agent stops talk. AgentHandleTime is the total of Holdtime, WrapUpTime, and AgentTalkDuration combined.
+Holdtime is how long the member waits when an agent places on them hold, while Waittime is how long they have to wait before someone answers there call.
+WrapUpTime refers to how long the member takes to hang up the phone after the agent stops talking. AgentHandleTime is the total of Holdtime, WrapUpTime, and AgentTalkDuration combined.
 
-  This data is allows me to easily answer the research question as I am using real-life data. With a huge sample size and many variables,
+  This data allows me to easily answer the research question as I am using real-life data. With a huge sample size and many variables,
 this is a great opportunity for data analysis and modeling. With this dataset, I know when doing calculations such as finding means and creating plots, 
-I will able to accurately give a truly image of call center volume and agent information to a small period of time such as 15 minutes.
+I will able to accurately truly give an image of call center volume and agent information to a small period of time such as 15 minutes.
   I did do some exploratory data analysis by creating figures that represent call center volume by the year, month, day of week, and time. 
 I also created a table that shows the average wait time, talk time, hold time, wrap up time, and count of every Interaction Outcome.
 \begin{figure}[H]
@@ -140,8 +141,8 @@ varying hours of the call center. Monday through Thursday, the call center is op
   \label{fig:Timeoneday}
 \end{figure}
 The call center consistently has a spike around 9am throughout the 3 years. This is suprising as the call center opens at 8am. This is important to be aware of when
-creating a forecasting model and having the banks employees be at their station at 9am. The decreasing trend throughout the day is not suprising
-as most people are working throughout the day. From a managers view, important to have your best employees not on break during that time so they are ready to solve 
+creating a forecasting model and having the banks employees be at their assigned station at 9am. The decreasing trend throughout the day is not suprising
+as most people are working throughout the day. From a managers point of view, it is important to have your best employees not on break during that time so they are ready to solve 
 any complications that come up. \citep{rafaeli2008impact}
 \begin{table}[H]
   \resizebox{\textwidth}{!} {
@@ -163,11 +164,11 @@ any complications that come up. \citep{rafaeli2008impact}
   }
   \end{table}
 Here it is prevalent that a majority of calls are handled. These variables played a key part in my models for the agents. It is also to see that 
-100 seconds is the cutoff for most people that Abandoned. That could be a goal for this bank to get too, to prevent more Abandoned calls. While 
+a wait time of 100 seconds is the cutoff for most people that Abandoned. That could be a goal for this bank to get too, to prevent more Abandoned calls. While 
 the number itself is not significant, Avramidis explains that "The maximal time a customer is willing to wait in queue is his patience time, A, also known as time-to-abandonment. The
 time he must wait before beginning service is his virtual queue time, V. The actual wait time is W = min(A,V), terminated by either abandonment (whenever $V  >  W$), or beginning of service (V = W).
-In heavy traffic, even a small fraction of calls that abandon the queue can have a dramatic effect on system performance" \citep{avramidis2005modeling}. This means that just reducing seconds
-in waittime could allow for a more efficient contact call system.
+In heavy traffic, even a small fraction of calls that abandon the queue can have a dramatic effect on system performance" \citep{avramidis2005modeling}. This means that just reducing a couple seconds
+in wait time could allow for a more efficient contact call system.
 \section*{Methods}
 When seeing these patterns, I did not see much seasonality in the data. While there was a clear jump in volume based on time, I did not see much in regards
 to year, month, or day. I then confirmed this by making one last histogram.
