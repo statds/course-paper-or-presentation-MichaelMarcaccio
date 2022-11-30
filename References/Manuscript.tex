@@ -386,11 +386,11 @@ the model with Interaction value with an R-squared value of 0.234, then Wait tim
 Overall, the best agent model would be the model with the highest R-squared value and Pearson Coefficient. In this case, this would be
 AvgGoalMet= 0.986 - 0.216*CallsPerAgent. A close second place would be AvgWaittime= -5.292 + 61.148*CallsPerAgent, as it had a decent 
 Pearson coefficient and R-squared value. Unfortunately, because of the Pearsons Coefficient I would not recommend the Interaction Value model however even though it had a good 
-r-squared value. Overall the other 3 models are would suggest to an individual to use to determine how many agents
-there business to have. Unfortunately, there are so many aspects to just this. In regards to a business perspective, the call center must have
-a budget so it is a difficult road to navigate. But, I believe it is possible to find a balance in between to ultimately maximize efficiency.
-We were also able to forecast call center volume using historical data and the ratio of how many hours the call center is open compared to each day to
-a week. 
+r-squared value. Overall the other 3 models have a better Pearsons Coefficient and are more useful to an individual to use to determine how many agents
+their business to have. Unfortunately, there are so many aspects to staffing a call center. In regards to a business perspective, the call center must have
+a budget so it is a difficult road to navigate. But, I believe it is possible to find a balance between budgeting and acheiveing maximize efficiency.
+I was also able to forecast call center volume using historical data and the ratio of how many hours the call center is open compared to each day to
+a week which is important for managers to know when they designate breaks to their employees. 
 
   The biggest limitation I would say was that there is no right answer to answering the calls per agent problem. In an ideal situation, you would have
 plenty of agents so waittime is completely reduced. However that is not efficient or plausible. I also do wish I knew the answer to what
@@ -400,15 +400,15 @@ but Unfortunately the parameters estimates were simply just inaccurate.
 Another challenge was dealing with the time complexities in the dataset. There are 6 days of the week, 47 15-minute-intervals across any day, which each occur a different number of times,
 and 213 15-minute-intervals across each week. This does not average out between days of the week. There was also 139 weeks in the data, 971 days in all the data, and
 27377 15-minute-intervals in all the data. So this fails to account for discrepancies in between days of the week. Also, Call time and any values
-about the all are data explicitly about the call so they are in the row in the itself, so we have to normalize the number of agents by number of calls During
-that period recorded before we run a model comparing both values. So overall, there was a lot of data cleaning and preparing needed in this dataset, that
+about the all are data explicitly about the call so they are in the row in the itself, so we have to normalize the number of agents by number of calls during
+that period recorded before I ran a model comparing both values. So overall, there was a lot of data cleaning and preparing needed in this dataset, that
 took time away from the data analysis.
 
   I still believe this study can be expanded on. Monday has a wait time of 175 seconds while Friday has a wait time of 88.2 seconds. Possibly multivariate regression technqiues could be used to model the number of agents needed.
 With the data at my hands, I could also try to answer questions such as if call length is dependenton call reason or even do an analysis on if all agents are performing
 on the same level. In detail, \citep{evensen1999effective} believes that "Since the primary interface between a financial institution and its customer is a service
-representative, this element strongly influences an institution's ability to deliver quality service.An organization’s human resource (HR) practices effect how well its employees are able to perform. More
-specifically, human resource practices directly influence how knowledgeable an employee is about the product offering, whether or not an employee is empowered to resolve customer issues in real time, and the
+representative, this element strongly influences an institution's ability to deliver quality service. An organization’s human resource (HR) practices effect how well its employees are able to perform. More
+specifically, human resources practices directly influence how knowledgeable an employee is about the product offering, whether or not an employee is empowered to resolve customer issues in real time, and the
 level of turnover within the organization". This is an interesting point as one could analyze how Human Resources Data plays a role in qualities like AgentHandleTime that reflects on the agents performance. Another interesting question to look into was the abandonment 
 rate and if how many times someone will call back the same day. I personally did not look into the chat feature that much, but I am sure that there is some interesting information like if people tend to reuse often.
 Another topic of interest is how does call center volume change on when there is an information technology problem such as the online banking services having an outage?

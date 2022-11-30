@@ -1,24 +1,24 @@
 # Fdb version 3
-["bibtex Manuscript"] 1669830554 "Manuscript.aux" "Manuscript.bbl" "Manuscript" 1669832660
+["bibtex Manuscript"] 1669830554 "Manuscript.aux" "Manuscript.bbl" "Manuscript" 1669833496
   "Citations.bib" 1668239182 2562 10dde4a408f7a5a0ec8fc813ee59e8ec ""
-  "Manuscript.aux" 1669832659 3911 a61165054a558345b0a567bd6fa90eb3 "pdflatex"
+  "Manuscript.aux" 1669833495 3911 a61165054a558345b0a567bd6fa90eb3 "pdflatex"
   "c:/texlive/2022/texmf-dist/bibtex/bst/chicago/chicago.bst" 1663114094 37416 2ae04276c51f11eda70770f4081293b7 ""
   (generated)
   "Manuscript.bbl"
   "Manuscript.blg"
-["pdflatex"] 1669832656 "c:/Users/micha/OneDrive/Documents/GitHub/Project/course-paper-or-presentation-MichaelMarcaccio/References/Manuscript.tex" "Manuscript.pdf" "Manuscript" 1669832660
+["pdflatex"] 1669833492 "c:/Users/micha/OneDrive/Documents/GitHub/Project/course-paper-or-presentation-MichaelMarcaccio/References/Manuscript.tex" "Manuscript.pdf" "Manuscript" 1669833496
   "By Year.png" 1667832155 8241 c5960158ff1d6af61103046428b3dc33 ""
   "ByMonthVolume.png" 1667832148 10549 cc7733e8fb9cd8a4a3738524caedb237 ""
   "CallVolumeByDayOfWeek.png" 1667832165 10530 11293daf79beed59015d597d6b5c265a ""
   "CallVolumeByTimeOfDayGROUPEDbyYear.png" 1667832160 13193 70e125649b584c4b7adeb4f1e4519a99 ""
   "Correlation.png" 1667832487 1548459 2292e5a08fe45c886b9a60ba9a98ef30 ""
   "Forecast15MinPeriods.png" 1667828424 4621301 482e6fff123516600a7c990fc15bbcad ""
-  "Manuscript.aux" 1669832659 3911 a61165054a558345b0a567bd6fa90eb3 "pdflatex"
+  "Manuscript.aux" 1669833495 3911 a61165054a558345b0a567bd6fa90eb3 "pdflatex"
   "Manuscript.bbl" 1669830555 2634 d650c7eabaacbab7b1aa8bd58d7ecdba "bibtex Manuscript"
   "Manuscript.out" 0 -1 0 "pdflatex"
-  "Manuscript.tex" 1669832655 28291 52974de4b808be05b6d3d3664ded8b87 ""
+  "Manuscript.tex" 1669833490 28434 3c49d22370aa702d8af57b5b44d579e0 ""
   "SeasonalityOfCallVolume.png" 1667832141 9040 c4e3e0bdf41df51bf17ea91c1961d1dc ""
-  "c:/Users/micha/OneDrive/Documents/GitHub/Project/course-paper-or-presentation-MichaelMarcaccio/References/Manuscript.tex" 1669832655 28291 52974de4b808be05b6d3d3664ded8b87 ""
+  "c:/Users/micha/OneDrive/Documents/GitHub/Project/course-paper-or-presentation-MichaelMarcaccio/References/Manuscript.tex" 1669833490 28434 3c49d22370aa702d8af57b5b44d579e0 ""
   "c:/texlive/2022/texmf-dist/fonts/map/fontname/texfonts.map" 1663114966 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "c:/texlive/2022/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1663113510 1004 54797486969f23fa377b128694d548df ""
   "c:/texlive/2022/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1663113510 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
