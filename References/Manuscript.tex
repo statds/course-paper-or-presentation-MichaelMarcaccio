@@ -274,7 +274,7 @@ I was able to produce this table:
   \end{table}
 This table shows that Friday accounts for 19.9 percent of all the hours in the week the call center is open, while Saturday only accounts
 5.25 percent of the hours. The only difference there is a different in ratio for Monday thru Thursday must be holidays, e.g. Thanksgiving. 
-The Projected Calls Per Day simply came from the total calls per week * the RatioDayPerWeek. We can also see this approach worked relatively well in the forecasting model. 
+The Projected Calls Per Day simply came from the Total calls per week * the RatioDayPerWeek. We can also see this approach worked relatively well in the forecasting model. 
 We also see that the MAPE(Mean Absolute Percent Error) is 4.21 percent. For context, a MAPE score less than 5 is very accurate.
 
   Using this information, I was able to create a figure that showed the amount of expected calls per day per 15 minute intervals. 
@@ -315,9 +315,9 @@ employees are getting stressed out at lot more and may need more time to get the
 The other days appear to be relatively normal and Saturday is functioning very efficiently. With a waittime less than 60 seconds, there is no reason to change the staffing model for
 Saturday. 
 
-  From there I ran Correlation between CallsPerAgent and the dependent variables. The Pearson Product Moment Correlation test can take a range of values from 1 to -1. A value of 0 shows there is no association between two variables. 
+  From there I ran Correlations between CallsPerAgent and the dependent variables. The Pearson Product Moment Correlation test can take a range of values from 1 to -1. A value of 0 shows there is no association between two variables. 
 A value greater than 0 indicates a positive association, meaning as the value of the dependent variable increases so does the independent variable. A value less than 0 indicates a negative association, meaning as the dependent 
-variable decreases so does the independent variable. The stronger the correlation between the variables the higher it is to 1 or -1.  The 4 dependent variables were Average Wait Time, Average Call Time, Average Goal Being Met, Average Interaction Value. 
+variable decreases so does the independent variable. The stronger the correlation between the variables the closer it is to 1 or -1.  The 4 dependent variables were Average Wait Time, Average Call Time, Average Goal Being Met, Average Interaction Value. 
 The one dependent variable is CallsPerAgent. In this case, the Calltime is the same as Handletime, which is the combination of Wait time, Hold time, and Wrap Up Time. 
 The Average Goal Being Met would be whatever the business establishes in seconds of  how long they would want a call center call to last. Average Interaction Value would be at what percentage 
 they want calls being "Handled" or taken by an agent in anyway. 
@@ -341,7 +341,7 @@ ranging between plus or minus .3 to .5 represents a medium association, and anyt
 Wait Time and Calls Per Agent have a medium positive relationship which states as Calls Per Agent increases, so does the Wait Time for 
 each Caller. Call Time and Calls Per Agent have a small positive relationship which states as Calls Per Agent increases, so does the 
 Call Time. Goal Time and Calls Per Agents have the strongest relationship, in this case a negative medium relationship, which states as
-Calls Per Agents increases, the Goal Being Met decreases. This means the Average Goal Time is nothing being hit consistently when Calls 
+Calls Per Agents increases, the Goal Being Met decreases. This means the Average Goal Time is not being hit consistently when Calls 
 are increasing. Interaction Value and Calls Per Agent have a medium positive relationship. However, in theory, as calls increase there should
 be more abandoned calls, but according to Pearsons Coefficient this is not the case. So while this relationship may not be a linear one,
 I will still present a model for it.
